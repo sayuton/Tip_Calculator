@@ -20,13 +20,13 @@ function calculateTip(){
     let tipPerPerson = (totalTip / noOfPeople).toFixed(2);
     let totalPerPerson = (total / noOfPeople).toFixed(2);
 
-    document.getElementById("tip-amount").textContent = `\$ ${totalTip}`;
-    document.getElementById("total-amount").textContent = `\$ ${total}`;
+    document.getElementById("tip-amount").textContent = `\₹ ${totalTip}`;
+    document.getElementById("total-amount").textContent = `\₹ ${total}`;
     
     document.getElementById("tip-percent").textContent = `${tipPercent}%`;
     document.getElementById("split-num").textContent = noOfPeople;
 
-    document.getElementById("tip-per-person").textContent = `\$ ${tipPerPerson}`;
-    document.getElementById("total-per-person").textContent = `\$ ${totalPerPerson}`;
+    document.getElementById("tip-per-person").textContent = `\₹ ${tipPerPerson}`;
+    document.getElementById("total-per-person").textContent = `\₹ ${totalPerPerson}`;
 }
 calculateTip();
